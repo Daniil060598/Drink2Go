@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Интернет-магазин кофейных напитков Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-
+  <header class="header">
+    <nav class="main-nav main-nav_closed main-nav_nojs">
+      <a class="main-nav__logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logotype/desktop-logo.svg" />
+          <source media="(min-width: 768px)" srcset="img/logotype/tablet-logo.svg" />
+          <img class="main-nav__logo-img" src="img/logotype/mobile-logo.svg" width="32" height="36">
+        </picture>
+        <span class="main-nav__logo-text">Интернет-магазин<br>
+          кофейных напитков</span>
+      </a>
+      <div class="main-nav__dropdown">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link_active" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="maim-nav__user-nav">
+        <li clas="main-nav__item">
+          <a class="main-nav__link main-nav__link_icon_account" href="#">
+            <p class="main-nav__link-text">Войти</p>
+          </a>
+        </li>
+        <li clas="main-nav__item">
+          <a class="main-nav__link main-nav__link_icon_basket" href="#">
+            <p class="main-nav__link-text">Корзина</p>
+          </a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+  </header>
+</body>
 <script src="js/script.js"></script>
 </body>
 </html>
