@@ -1,0 +1,20 @@
+.text {
+  font-style: normal;
+  font-weight: 400;
+
+  &_size_regular,
+  &_size_middle,
+  &_size_small {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text {
+    &_size_regular {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}
