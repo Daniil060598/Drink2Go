@@ -92,6 +92,7 @@
 .filter__control {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .filter__control-mark {
@@ -184,4 +185,75 @@
   color: #7859cf;
   border: none;
   appearance: none;
+}
+
+@media (min-width: @tablet-width) {
+  .filter__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(97px, 1fr));
+    justify-items: start;
+    column-gap: 30px;
+  }
+
+  .filter__group-price {
+    grid-column: 1 / 3;
+  }
+
+  .filter__range-scale {
+    max-width: 223px;
+  }
+
+  .filter__range-bar {
+    width: 192px;
+  }
+
+  .filter__range-input {
+    max-width: 97px;
+  }
+
+  .filter__range-wrapper-inputs::before {
+    left: 107px;
+  }
+
+  .filter__group-milk {
+    grid-column: 3 / 5;
+  }
+
+  .filter__group-country {
+    grid-column: 5 / 7;
+  }
+
+  .filter__button-reset {
+    grid-column: 3 / 5;
+  }
+
+  .filter__select {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter__range-scale {
+    max-width: 100%;
+  }
+
+  .filter__range-bar {
+    width: 86%;
+  }
+
+  .filter__range-input {
+    max-width: 134px;
+    margin-right: 50px;
+  }
+
+  .filter__range-wrapper-inputs::before {
+    left: 48%;
+  }
 }

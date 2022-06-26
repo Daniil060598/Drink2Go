@@ -147,9 +147,9 @@
       <div class="catalog__wrapper">
         <span class="catalog__tag section-tag">Каталог</span>
         <h3 class="catalog__title title title_size_middle">Каталог кофейных напитков</h3>
-        <form class="filter" action="" method="get">
+        <form class="catalog__filter filter" action="" method="get">
           <div class="filter__wrapper">
-            <fieldset class="filter__group">
+            <fieldset class="filter__group filter__group-price">
               <legend class="filter__title">Цена</legend>
               <div class="filter__range">
                 <div class="filter__range-scale">
@@ -164,14 +164,12 @@
                 </div>
 
                 <div class="filter__range-wrapper-inputs">
-                  <label class="filter__range-input-label">
-                  </label>
                   <input class="filter__range-input" type="number" value="0" name="min-price" required>
                   <input class="filter__range-input" type="number" value="900" name="max-price" required>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter__group">
+            <fieldset class="filter__group filter__group-milk">
               <h2 class="filter__title">Наличие молока</h2>
               <ul class="filter__list">
                 <li class="filter__item">
@@ -204,7 +202,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__group">
+            <fieldset class="filter__group filter__group-country">
               <h2 class="filter__title">Страна произрастания</h2>
               <ul class="filter__list">
                 <li class="filter__item">
@@ -247,7 +245,7 @@
             <button class="filter__button-reset" type="reset">Сбросить фильтр</button>
         </form>
       </div>
-      <div class="filter__select">
+      <div class="catalog__select filter__select">
         <label class="filter__select-label" for="sorting">Сортировка:</label>
         <select class="filter__select-control" id="sorting" name="sorting">
           <option value="popular">по умолчанию</option>
@@ -260,8 +258,6 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/ 1x, img/catalog/product-photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/ 1x, img/catalog/product-photo-1-tablet@2x.jpg 2x">
               <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
             </picture>
           </a>
@@ -276,8 +272,6 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/ 1x, img/catalog/product-photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/ 1x, img/catalog/product-photo-1-tablet@2x.jpg 2x">
               <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
             </picture>
           </a>
@@ -292,8 +286,6 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/ 1x, img/catalog/product-photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/ 1x, img/catalog/product-photo-1-tablet@2x.jpg 2x">
               <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
             </picture>
           </a>
@@ -308,8 +300,34 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/ 1x, img/catalog/product-photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/ 1x, img/catalog/product-photo-1-tablet@2x.jpg 2x">
+              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+            </picture>
+          </a>
+          <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
+          <p class="product-card__text text text_size_small">Кофе без кофеина из Эфиопии
+            с натуральным фермерским молоком</p>
+          <div class="product-card__price-wrapper">
+            <b class="product-card__price">225₽</b>
+            <a class="product-card__button button" href="#">В корзину</a>
+          </div>
+        </li>
+        <li class="product-card">
+          <a href="#">
+            <picture>
+              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+            </picture>
+          </a>
+          <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
+          <p class="product-card__text text text_size_small">Кофе без кофеина из Эфиопии
+            с натуральным фермерским молоком</p>
+          <div class="product-card__price-wrapper">
+            <b class="product-card__price">225₽</b>
+            <a class="product-card__button button" href="#">В корзину</a>
+          </div>
+        </li>
+        <li class="product-card">
+          <a href="#">
+            <picture>
               <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
             </picture>
           </a>
@@ -325,8 +343,8 @@
       <div class="pagination">
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link pagination-prev pagination-disabled" href="#">
-
+            <a class="pagination__link pagination__link_prev pagination-disabled" href="#">
+              <p>Назад</p>
             </a>
           </li>
           <li class="pagination__item">
@@ -339,8 +357,8 @@
             <a class="pagination__link" href="#">3</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link pagination-next" href="#">
-
+            <a class="pagination__link pagination__link_next" href="#">
+              <p>Вперёд</p>
             </a>
           </li>
         </ul>
