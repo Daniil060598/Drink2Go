@@ -14,6 +14,25 @@
   font-weight: 400;
 }
 
+.copyright__link {
+  &:hover,
+  &:focus {
+    color: #7859CF;
+
+    & .copyright__link-logo {
+      fill: #7859CF;
+    }
+  }
+
+  &:active {
+    color: #593CAC;
+
+    & .copyright__link-logo {
+      fill: #593CAC;
+    }
+  }
+}
+
 .copyright__link-logo {
   position: relative;
   top: 5px;

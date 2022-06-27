@@ -38,11 +38,10 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   background-color: #ffffff;
-  outline: none;
 
   &_active {
-    color: #7859CF;
-    border-bottom: 2px solid #7859CF;
+    color: #7859cf;
+    border-bottom: 2px solid #7859cf;
   }
 
   &_icon_account,
@@ -60,14 +59,14 @@
     background-image: url("../img/basket-icon.svg");
   }
 
-  &:hover, &:focus {
-    color: #7859CF;
+  &:hover,
+  &:focus {
+    color: #7859cf;
   }
 
   &:active {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
-
 }
 
 .main-nav__link-text {
@@ -81,8 +80,9 @@
   background-color: #ffffff;
   cursor: pointer;
   border: none;
+
   &:active {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 }
 
@@ -125,6 +125,7 @@
     top: 60px;
     left: 0;
     width: 100%;
+    z-index: 10;
   }
 
   .main-nav_closed .main-nav__dropdown {
@@ -164,6 +165,7 @@
 
   .main-nav__item {
     border-top: none;
+
     &:last-child {
       border-bottom: none;
     }
@@ -207,8 +209,9 @@
     line-height: 16px;
   }
 
-  .main-nav__item{
+  .main-nav__item {
     margin-right: 20px;
+
     &:last-child {
       margin-right: 0;
     }

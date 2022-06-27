@@ -38,12 +38,33 @@
       background: url("../img/select-arrow-icon.svg") center no-repeat;
       transform: rotate(90deg);
     }
+
+    &:hover::after,
+    &:focus::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z' fill='%23ffffff'/%3E%3C/svg%3E");
+    }
   }
 
   &_next {
     &::after {
       transform: rotate(-90deg);
     }
+  }
+
+
+  &:hover,
+  &:focus {
+    background-color: #9070EC;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #593CAC;
+  }
+
+  &_disabled {
+    background-color: #E2E2E2;
+    color: #ffffff;
   }
 }
 

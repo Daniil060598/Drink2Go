@@ -37,12 +37,12 @@
         </ul>
       </div>
       <ul class="maim-nav__user-nav">
-        <li clas="main-nav__item">
+        <li class="main-nav__item">
           <a class="main-nav__link main-nav__link_icon_account" href="#">
             <p class="main-nav__link-text">Войти</p>
           </a>
         </li>
-        <li clas="main-nav__item">
+        <li class="main-nav__item">
           <a class="main-nav__link main-nav__link_icon_basket" href="#">
             <p class="main-nav__link-text">Корзина</p>
           </a>
@@ -76,21 +76,21 @@
             <button class="novelty__button-order button">Заказать</button>
           </div>
         </div>
-        <button class="novelty__slider-nav novelty__slider-nav_prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
-        <button class="novelty__slider-nav novelty__slider-nav_next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
-        <ol class="slider-pagination">
-          <li class="slider-pagination__item">
-            <button class="slider-pagination__button slider-pagination__button_current" type="button">
+        <button class="slider__nav slider__nav_prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+        <button class="slider__nav slider__nav_next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+        <ol class="slider__pagination">
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button slider__pagination-button_current" type="button">
               <span class="visually-hidden">1 слайд</span>
             </button>
           </li>
-          <li class="slider-pagination__item">
-            <button class="slider-pagination__button" type="button">
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button" type="button">
               <span class="visually-hidden">2 слайд</span>
             </button>
           </li>
-          <li class="slider-pagination__item">
-            <button class="slider-pagination__button" type="button">
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button" type="button">
               <span class="visually-hidden">3 слайд</span>
             </button>
           </li>
@@ -164,8 +164,8 @@
                 </div>
 
                 <div class="filter__range-wrapper-inputs">
-                  <input class="filter__range-input" type="number" value="0" name="min-price" required>
-                  <input class="filter__range-input" type="number" value="900" name="max-price" required>
+                  <input class="filter__range-input" type="number" value="0" name="min-price">
+                  <input class="filter__range-input" type="number" value="900" name="max-price">
                 </div>
               </div>
             </fieldset>
@@ -242,7 +242,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter__button-reset" type="reset">Сбросить фильтр</button>
+            <button class="filter__button-reset button" type="reset">Сбросить фильтр</button>
         </form>
       </div>
       <div class="catalog__select filter__select">
@@ -343,7 +343,7 @@
       <div class="pagination">
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link pagination__link_prev pagination-disabled" href="#">
+            <a class="pagination__link pagination__link_prev" href="#">
               <p>Назад</p>
             </a>
           </li>
@@ -445,7 +445,7 @@
           <b class="copyright__text">Разработано в</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
-            <svg class="copyright__link-logo" width="12" height="16" fill="#63D1BB" role="img" aria-label="Логотип html-academy">
+            <svg class="copyright__link-logo" width="12" height="16" fill="#BDBDBD" role="img" aria-label="Логотип html-academy">
               <use xlink:href="img/sprite.svg#html-academy-logo"></use>
             </svg>
             <span class="visually-hidden">Перейти на сайт html-academy</span>
