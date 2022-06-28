@@ -15,6 +15,37 @@
   margin-bottom: 20px;
 }
 
+.catalog__select {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.catalog__select-label {
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.catalog__select-control {
+  padding: 4px 0 4px 6px;
+  font-weight: 600;
+  background: #f8f8f8 url("../img/select-arrow-icon.svg") right 10px top 14px no-repeat;
+  color: #7859cf;
+  border: none;
+  appearance: none;
+
+  &:hover,
+  &:focus {
+    background-color: #f0ebff;
+  }
+
+  & option:hover,
+  & option:focus {
+    background-color: #f0ebff;
+  }
+}
+
 .catalog__wrapper .catalog__list {
   display: flex;
   flex-wrap: wrap;

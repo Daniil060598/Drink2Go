@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-left: 20px;
   width: auto;
@@ -15,7 +16,7 @@
   display: none;
 }
 
-.maim-nav__user-nav {
+.main-nav__user-nav {
   display: flex;
   flex-wrap: wrap;
 }
@@ -137,7 +138,9 @@
   }
 
   .main-nav_nojs .main-nav__dropdown {
-    display: flex;
+    position: static;
+    display: block;
+    order: 3;
   }
 }
 
