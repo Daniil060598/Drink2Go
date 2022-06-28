@@ -1,5 +1,10 @@
+.slider {
+  overflow: visible;
+}
+
 .slider__nav {
   position: absolute;
+  z-index: 10;
   top: 0;
   width: 20px;
   height: 100%;
@@ -47,13 +52,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .slider__pagination {
+  .slider .slider__pagination {
     display: flex;
     position: absolute;
     bottom: 70px;
     left: 50%;
     flex-wrap: wrap;
-    min-width: 202px;
+    width: 202px;
     justify-content: space-between;
   }
 

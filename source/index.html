@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Интернет-магазин кофейных напитков Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -55,46 +56,78 @@
   </header>
   <main class="main">
     <section class="novelty">
-      <div class="novelty__wrapper slider">
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/flat-white-img-desktop.webp 1x, img/popular-product/triple-set-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/flat-white-img-tablet.png 1x, img/popular-product/triple-set-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/flat_white_img.png 1x, img/popular-product/triple-set-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/flat-white-img-desktop.png.jpg 1x, img/popular-product/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/flat-white-img-tablet.png 1x, img/popular-product/triple-set-tablet@2x.jpg 2x">
-          <img class="novelty__img" src="img/flat_white_img.png" srcset="img/popular-product/triple-set-mobile@2x.jpg 2x" alt="Металичсекая банка с кофе">
-        </picture>
-        <div class="novelty__right-column">
-          <span class="novelty__tag section-tag">Новинка!</span>
-          <h2 class="novelty__title title title_size_big">Декаф Флэт Уайт</h2>
-          <p class="novelty__description text text_size_middle">
-            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
-          </p>
-          <div class="novelty__price-wrapper">
-            <del class="novelty__old-price">295₽</del>
-            <b class="novelty__price">205₽</b>
-            <button class="novelty__button-order button">Заказать</button>
+      <div class="novelty__wrapper swiper slider">
+        <div class="slider__wrapper swiper-wrapper">
+          <div class="slider__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/flat-white-img-desktop.webp 1x, img/slider/flat-white-img-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/flat-white-img-tablet.webp 1x, img/slider/flat-white-img-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/slider/flat-white-img-mobile.webp 1x, img/slider/flat-white-img-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/slider/flat-white-img-desktop.png.jpg 1x, img/slider/flat-white-img-desktop.png.jpg@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/slider/flat-white-img-tablet.png 1x, img/slider/flat-white-img-tablet.png@2x.jpg 2x">
+              <img class="novelty__img" src="img/slider/flat-white-img-mobile.png" srcset="img/slider/flat-white-img-mobile.png@2x.jpg 2x" alt="Металлическая банка с кофе">
+            </picture>
+            <div class="novelty__right-column">
+              <span class="novelty__tag section-tag">Новинка!</span>
+              <h2 class="novelty__title title title_size_big">Декаф Флэт Уайт</h2>
+              <p class="novelty__description text text_size_middle">
+                Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+              </p>
+              <div class="novelty__price-wrapper">
+                <del class="novelty__old-price">295₽</del>
+                <b class="novelty__price">205₽</b>
+                <button class="novelty__button-order button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/flat-white-img-desktop.webp 1x, img/slider/flat-white-img-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/flat-white-img-tablet.webp 1x, img/slider/flat-white-img-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/slider/flat-white-img-mobile.webp 1x, img/slider/flat-white-img-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/slider/flat-white-img-desktop.png.jpg 1x, img/slider/flat-white-img-desktop.png.jpg@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/slider/flat-white-img-tablet.png 1x, img/slider/flat-white-img-tablet.png@2x.jpg 2x">
+              <img class="novelty__img" src="img/slider/flat-white-img-mobile.png" srcset="img/slider/flat-white-img-mobile.png@2x.jpg 2x" alt="Металлическая банка с кофе">
+            </picture>
+            <div class="novelty__right-column">
+              <span class="novelty__tag section-tag">Новинка!</span>
+              <h2 class="novelty__title title title_size_big">Лавандовый Латте</h2>
+              <p class="novelty__description text text_size_middle">
+                Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+              </p>
+              <div class="novelty__price-wrapper">
+                <del class="novelty__old-price">295₽</del>
+                <b class="novelty__price">205₽</b>
+                <button class="novelty__button-order button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/flat-white-img-desktop.webp 1x, img/slider/flat-white-img-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/flat-white-img-tablet.webp 1x, img/slider/flat-white-img-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/slider/flat-white-img-mobile.webp 1x, img/slider/flat-white-img-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/slider/flat-white-img-desktop.png.jpg 1x, img/slider/flat-white-img-desktop.png.jpg@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/slider/flat-white-img-tablet.png 1x, img/slider/flat-white-img-tablet.png@2x.jpg 2x">
+              <img class="novelty__img" src="img/slider/flat-white-img-mobile.png" srcset="img/slider/flat-white-img-mobile.png@2x.jpg 2x" alt="Металлическая банка с кофе">
+            </picture>
+            <div class="novelty__right-column">
+              <span class="novelty__tag section-tag">Новинка!</span>
+              <h2 class="novelty__title title title_size_big">Тройной Эспрессо</h2>
+              <p class="novelty__description text text_size_middle">
+                Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+              </p>
+              <div class="novelty__price-wrapper">
+                <del class="novelty__old-price">295₽</del>
+                <b class="novelty__price">205₽</b>
+                <button class="novelty__button-order button">Заказать</button>
+              </div>
+            </div>
           </div>
         </div>
         <button class="slider__nav slider__nav_prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
         <button class="slider__nav slider__nav_next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
-        <ol class="slider__pagination">
-          <li class="slider__pagination-item">
-            <button class="slider__pagination-button slider__pagination-button_current" type="button">
-              <span class="visually-hidden">1 слайд</span>
-            </button>
-          </li>
-          <li class="slider__pagination-item">
-            <button class="slider__pagination-button" type="button">
-              <span class="visually-hidden">2 слайд</span>
-            </button>
-          </li>
-          <li class="slider__pagination-item">
-            <button class="slider__pagination-button" type="button">
-              <span class="visually-hidden">3 слайд</span>
-            </button>
-          </li>
-        </ol>
+        <div class="slider__pagination"></div>
       </div>
     </section>
     <section class="advantages">
@@ -258,7 +291,8 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+              <source type="image/webp" srcset="img/catalog/product-photo-1-mobile.webp 1x, img/catalog/product-photo-1-mobile@2x.webp 2x">
+              <img class="product-card__image" src="img/catalog/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металлическая банка с кофе">
             </picture>
           </a>
           <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
@@ -272,7 +306,8 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+              <source type="image/webp" srcset="img/catalog/product-photo-2-mobile.webp 1x, img/catalog/product-photo-2-mobile@2x.webp 2x">
+              <img class="product-card__image" src="img/catalog/product-photo-2-mobile.jpg" srcset="img/catalog/product-photo-2-mobile@2x.jpg 2x" width="130" height="188" alt="Металлическая банка с кофе">
             </picture>
           </a>
           <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
@@ -286,7 +321,8 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+              <source type="image/webp" srcset="img/catalog/product-photo-3-mobile.webp 1x, img/catalog/product-photo-3-mobile@2x.webp 2x">
+              <img class="product-card__image" src="img/catalog/product-photo-3-mobile.jpg" srcset="img/catalog/product-photo-3-mobile@2x.jpg 2x" width="130" height="188" alt="Металлическая банка с кофе">
             </picture>
           </a>
           <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
@@ -300,7 +336,8 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+              <source type="image/webp" srcset="img/catalog/product-photo-4-mobile.webp 1x, img/catalog/product-photo-4-mobile@2x.webp 2x">
+              <img class="product-card__image" src="img/catalog/product-photo-4-mobile.jpg" srcset="img/catalog/product-photo-4-mobile@2x.jpg 2x" width="130" height="188" alt="Металлическая банка с кофе">
             </picture>
           </a>
           <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
@@ -314,7 +351,8 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+              <source type="image/webp" srcset="img/catalog/product-photo-5-mobile.webp 1x, img/catalog/product-photo-5-mobile@2x.webp 2x">
+              <img class="product-card__image" src="img/catalog/product-photo-5-mobile.jpg" srcset="img/catalog/product-photo-5-mobile@2x.jpg 2x" width="130" height="188" alt="Металлическая банка с кофе">
             </picture>
           </a>
           <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
@@ -328,7 +366,8 @@
         <li class="product-card">
           <a href="#">
             <picture>
-              <img class="product-card__image" src="img/product-photo-1-mobile.jpg" srcset="img/catalog/product-photo-1-mobile@2x.jpg 2x" width="130" height="188" alt="Металическая банка с кофе">
+              <source type="image/webp" srcset="img/catalog/product-photo-6-mobile.webp 1x, img/catalog/product-photo-6-mobile@2x.webp 2x">
+              <img class="product-card__image" src="img/catalog/product-photo-6-mobile.jpg" srcset="img/catalog/product-photo-6-mobile@2x.jpg 2x" width="130" height="188" alt="Металлическая банка с кофе">
             </picture>
           </a>
           <h4 class="product-card__title title title_size_small">Декаф Флэт Уайт</h4>
@@ -455,6 +494,7 @@
     </footer>
   </main>
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 
